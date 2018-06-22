@@ -5,4 +5,5 @@ package com.qcp.dfv;
  */
 
 public class Ac {
+    private String add;
 }
