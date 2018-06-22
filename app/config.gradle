@@ -1,0 +1,20 @@
+ext {
+    versionCode = 1
+    versionName = "v1.0"
+
+    /**生产环境***/
+
+//    release_api_url = "\"http://43.250.217.177:8888/bssapp/\""
+//    release_api_url = "\"http://bss.iov-tsp.com/bssapp/\""
+    release_api_url = "\"http://43.250.217.217:8888/bssapp/\""
+//    release_api_url = "\"http://192.168.100.131:8081/bssapp/\""
+//    release_api_url = "\"http://192.168.100.152:8080/bssapp/\""
+//    release_api_url = "\"http://180.153.60.237:8081/bssapp/\""//备机环境wildfly
+
+
+    /**开发环境***/
+    dev_api_url = "\"http://172.16.128.165:8060/bssapp/\""
+
+    //dev_api_url = "\"http://218.94.57.219:5560/tongli/\""
+
+}

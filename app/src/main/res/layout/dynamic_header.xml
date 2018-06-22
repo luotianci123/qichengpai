@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:background="@color/button"
+        android:paddingBottom="@dimen/space_3"
+        android:paddingLeft="@dimen/space_8"
+        android:paddingRight="@dimen/space_8"
+        android:paddingTop="@dimen/space_3"
+        android:text="推荐关注"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_12sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recommend_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijing"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:gravity="center"
+        android:text="请对照《机动车行驶证》认真填写一下信息"
+        android:textColor="@color/red"
+        android:textSize="@dimen/fontsize_12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_20"
+        android:text="选择车型："
+        android:textSize="@dimen/fontsize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/beijing"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_20"
+        android:text="车辆类型："
+        android:textSize="@dimen/fontsize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/beijing"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_20"
+        android:text="车牌号码："
+        android:textSize="@dimen/fontsize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/beijing"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_20"
+        android:text="车牌号码："
+        android:textSize="@dimen/fontsize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/beijing"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_20"
+        android:text="车架号码："
+        android:textSize="@dimen/fontsize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/beijing"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_20"
+        android:text="发动机号："
+        android:textSize="@dimen/fontsize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/beijing"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_20"
+        android:text="查询城市：全国"
+        android:textSize="@dimen/fontsize_16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:gravity="center"
+        android:text="所填车辆信息为当地交通部门登记信息，我们将严格保密，请放心填写。"
+        android:textSize="@dimen/fontsize_10sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_50"
+        android:background="@drawable/bt_purple"
+        android:text="@string/save_check"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:gravity="center"
+        android:text="点击“保存并查询”表示您同意用户使用协议" />
+</LinearLayout>

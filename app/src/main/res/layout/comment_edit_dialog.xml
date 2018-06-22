@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/comment_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left"
+            android:hint="发表评论"
+            android:maxLength="200"
+            android:maxLines="10"
+            android:padding="@dimen/space_10"
+            android:textSize="@dimen/fontsize_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/comment_et"
+            android:background="@color/beijing"></View>
+
+
+        <TextView
+            android:id="@+id/number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_50"
+            android:layout_below="@+id/comment_et"
+            android:layout_marginLeft="@dimen/space_20"
+            android:gravity="center"
+            android:text="0/200" />
+
+        <Button
+            android:id="@+id/send_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_35"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/comment_et"
+            android:layout_margin="@dimen/space_8"
+            android:background="@drawable/bt_purple"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_14sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

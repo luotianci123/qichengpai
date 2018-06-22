@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qcp.dfv">
+    android:installLocation="internalOnly">
+    <!-- android:sharedUserId="android.uid.system"-->
+
+    <uses-permission
+        android:name="android.permission.INSTALL_LOCATION_PROVIDER"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.DELETE_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_USER_DATA"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--用于访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--屏蔽home键需要的权限-->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALTER_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:name="com.qcp.dfv.DfvApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.qcp.dfv.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="com.qcp.dfv.ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.linkage.dfv.ui.activity.SplashActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qcp.dfv.mainview.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qcp.dfv.ui.activity.AdWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qcp.dfv.ui.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.HelpActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.MsgActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.RetrievePwdActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.MyFollowingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.MyFansActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.MyDynamicActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.MyInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.PictureShareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.VideoShareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.ViolationReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.ScanActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.WeizhangCheckActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.CarFansTopActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.HotActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.qcp.dfv.ui.activity.ContentInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

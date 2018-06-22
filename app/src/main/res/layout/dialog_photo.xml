@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_dialog_persion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_photo_below"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/tv_photo"
+            android:background="@drawable/actionsheet_top_selector"
+            android:gravity="center"
+            android:text="本地相册"
+            android:textSize="16sp"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/cancel"
+            android:layout_marginBottom="@dimen/space_15"
+            android:background="@drawable/actionsheet_bottom_selector"
+            android:gravity="center"
+            android:text="拍照"
+            android:textSize="16sp"
+            android:textColor="@color/blue" />
+
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/actionsheet_single_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="@color/blue" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_photo_below"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/actionsheet_top_selector"-->
+    <!--android:gravity="center"-->
+    <!--android:text="从相册中选择"-->
+    <!--android:textColor="@color/blue"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_photo"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/actionsheet_bottom_selector"-->
+    <!--android:gravity="center"-->
+    <!--android:text="拍照上传"-->
+    <!--android:textColor="@color/blue"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/cancel"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/actionsheet_single_selector"-->
+    <!--android:gravity="center"-->
+    <!--android:text="取消"-->
+    <!--android:textColor="@color/blue"-->
+    <!--android:textSize="16sp" />-->
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

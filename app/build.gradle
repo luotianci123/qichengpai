@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+apply from: "config.gradle"
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.qcp.dfv"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode project.ext.versionCode
+        versionName project.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips", "x86_64", "armeabi-v8a"
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            versionNameSuffix "-debug"
+            buildConfigField "boolean", "LOG_DEBUG", "true"//是否输出LOG信息
+            buildConfigField "String", "API_URL", project.ext.release_api_url
+        }
+
+
+        preview {
+            minifyEnabled true //混淆
+            shrinkResources true //不打包无用的资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "LOG_DEBUG", "true"//是否输出LOG信息
+            buildConfigField "String", "API_URL", project.ext.release_api_url
+        }
+
+        release {
+            minifyEnabled false //混淆
+            shrinkResources false //不打包无用的资源
+            // Zipalign优化
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "LOG_DEBUG", "false"//是否输出LOG信息
+            buildConfigField "String", "API_URL", project.ext.release_api_url
+        }
+
+    }
+
+    //生成自定义名apk包
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    "QCP_DFV-${defaultConfig.versionName}-${variant.buildType.name}.apk".toLowerCase())
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    dexOptions {
+        jumboMode true
+    }
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        compile 'com.android.support:appcompat-v7:25.3.1'
+        compile 'com.android.support:recyclerview-v7:25.3.1'
+        testCompile 'junit:junit:4.12'
+        compile 'com.lzy.net:okserver:1.1.0'
+        compile 'com.lzy.net:okgo:2.1.4'
+        compile 'com.google.code.gson:gson:2.6.2'
+        compile 'eu.chainfire:libsuperuser:1.0.0.201608240809'
+        compile 'com.github.bumptech.glide:glide:3.7.0'
+        compile 'com.jakewharton:butterknife:7.0.1'
+        compile files('libs/AMap_Location_V3.1.0_20161027.jar')
+        compile 'com.github.pinguo-zhouwei:MZBannerView:v2.0.0'
+        compile "com.daimajia.swipelayout:library:1.2.0@aar"
+        compile 'com.daimajia.androidanimations:library:1.1.2@aar'
+        compile 'com.nineoldandroids:library:2.4.0'
+        compile 'jp.wasabeef:recyclerview-animators:1.0.3@aar'
+        compile 'com.github.zhaokaiqiang.klog:library:1.6.0'
+        compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.2'
+        compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.2'//如果使用了特殊的Header
+        compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+        compile 'com.github.chihane:JDAddressSelector:1.1.4'
+        compile 'pub.devrel:easypermissions:0.1.7'
+        compile 'com.github.lovetuzitong:MultiImageSelector:1.2'
+        compile 'com.github.zcweng:switch-button:0.0.3@aar'
+        compile 'com.android.support:design:25.3.1'
+        compile 'cn.jzvd:jiaozivideoplayer:6.2.10'//视频播放控件
+        compile 'cn.yipianfengye.android:zxing-library:2.2'//扫描二维码模块
+    }
+}
+
+dependencies {
+}

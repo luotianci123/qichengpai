@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\luotc\.android\build-cache\6083b60cabe078bdf931e064926ad8a030f1e7c4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a68c5e705895df63da079a9e5c842fd636b09e70">
+        <dex dex="D:\dongfangqicheng\hebu\qichengpai\app\build\intermediates\pre-dexed\debug\classes_a613d22ab6a1ac6756505c7ef22cd47be12a35ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\luotc\.android\build-cache\6083b60cabe078bdf931e064926ad8a030f1e7c4\output\jars\libs\core_3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6afec4bf592cfc30a0f9615f9739583c6e2bf04e">
+        <dex dex="D:\dongfangqicheng\hebu\qichengpai\app\build\intermediates\pre-dexed\debug\core_3.0.1_57a72c99f89cc8e1f8bed72c3ccde53a668aa6f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\luotc\.android\build-cache\1b5f8a429044f7514fa95dcbbdae8f10b1c2b14a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\dongfangqicheng\hebu\qichengpai\app\build\intermediates\pre-dexed\debug\classes_3c1c4e0a901e99445022b12792e2d518ffbbd809.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\dongfangqicheng\hebu\qichengpai\app\libs\AMap_Location_V3.1.0_20161027.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd57103bd88f0f9ae21c8531cc18c6dce172cc2a">
+        <dex dex="D:\dongfangqicheng\hebu\qichengpai\app\build\intermediates\pre-dexed\debug\AMap_Location_V3.1.0_20161027_06ea3dc069213e31794f1d74b2c1f7e25284020c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\luotc\.android\build-cache\df8b2551a10d2b471ded12fc7bc101ef9e760c59\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\dongfangqicheng\hebu\qichengpai\app\build\intermediates\pre-dexed\debug\classes_aa8af9f1bbe8ee34ffcd2d2953095886b3275b1d.jar" />
+    </item>
+
+</items>

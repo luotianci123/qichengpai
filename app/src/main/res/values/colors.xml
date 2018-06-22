@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B765FF</color>
+    <color name="colorPrimaryDark">#B765FF</color>
+    <color name="colorAccent">#B765FF</color>
+
+    <color name="beijing">#EFEFF4</color>
+    <color name="line_bg">#cdcdc9</color>
+    <color name="qianhuise">#cdcdcd</color>
+    <color name="button">#1E2B30</color>
+    <color name="textColor">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="bg">#D5D5D5</color>
+    <color name="item_bg">#F5F5F5</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="white">#ffffff</color> <!-- 白色 -->
+    <color name="yellow">#ffff00</color> <!-- 黄色 -->
+    <color name="orange">#F07C29</color> <!-- 橙色 -->
+    <color name="red">#ff0000</color> <!-- 红色 -->
+    <color name="lightgray">#d3d3d3</color> <!-- 亮灰色 -->
+    <color name="darkgray">#a9a9a9</color> <!-- 暗灰色 -->
+    <color name="gray">#808080</color> <!-- 灰色 -->
+    <color name="cyan">#00ffff</color> <!-- 青色 -->
+    <color name="green">#008000</color> <!-- 绿色 -->
+    <color name="blue">#00a5ec</color> <!-- 蓝色 -->
+    <color name="black">#000000</color> <!-- 黑色 -->
+
+    <color name="line">#e0e0e0</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+    <color name="text_color_gey">#676767</color>
+    <color name="colorText">#9b9b9b</color>
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorBackground">#f1f0f6</color>
+
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="mask_color">#88888888</color>
+    <color name="white_normal">#ffffffff</color>
+    <color name="login_button_background">#71c297</color>
+    <color name="check_status_1">#FA393E</color>
+    <color name="check_status_2">#F2B051</color>
+    <color name="scan_corner_color">#0effc2</color>
+</resources>
